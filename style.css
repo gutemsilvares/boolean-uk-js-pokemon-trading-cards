@@ -1,0 +1,71 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #fff;
+}
+
+html {
+	font-family: "Itim", cursive;
+	font-size: 10px;
+	line-height: 1.5;
+}
+
+.container {
+	width: 100%;
+	max-width: 100rem;
+	margin: 50px auto;
+	padding: 10px;
+}
+
+h1 {
+	font-size: 3.2rem;
+	text-align: center;
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 20px;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	margin-top: 80px;
+}
+
+.card .card--img {
+	
+	object-fit: contain;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	border: 1px solid #cfcfcf;
+	height: auto;
+	border-radius: 10px;
+	padding: 15px;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.card:hover {
+	cursor: pointer;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	transform: scale(1.02);
+	transition: all 0.4s;
+}
+
+.card .card---title {
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+.card .card--text {
+	font-size: 2.2rem;
+	text-transform: uppercase;
+	text-align: left;
+}
