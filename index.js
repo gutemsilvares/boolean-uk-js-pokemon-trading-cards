@@ -16,6 +16,7 @@ function createCard(pokemon) {
 	imgEl.setAttribute("width", "256");
 
 	const statsSectionEl = document.createElement("div");
+
 	statsSectionEl.setAttribute("class", "card--text");
 
 	const hpEl = document.createElement("p");
